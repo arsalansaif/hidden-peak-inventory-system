@@ -1,113 +1,36 @@
-# CS 509 Hidden Peak
+# Hidden Peak — Store & Inventory Management System
 
-This is the gitlab repository for the Hidden Peak team's group project. The live website is hosted on AWS here: https://cs509hiddenpeak.s3.us-east-2.amazonaws.com/welcome.html
+A multi-role web application for managing a network of virtual computer stores. Built as a team project and deployed on **AWS S3**, it supports three distinct user roles — **Site Manager**, **Store Owner**, and **Customer** — each with its own dashboard and workflows.
 
-## Site Manager Credentials
+## Roles & features
 
-In order to log into the site manager landing page, use the following credentials:
+**Site Manager**
+- Report total inventory value across the entire site
+- Report the site manager's balance
+- Generate a site-wide inventory report aggregated by store
+- Remove a store
 
-```
-Username: admin
-Password: admin
-```
+**Store Owner**
+- Create a store
+- Add / remove computers from inventory
+- Modify computer prices
+- Generate store inventory and total balance reports
 
-## Store Owner Credentials
-For convenience, the database is prepopulated with the following store owner credentials:
+**Customer**
+- Browse stores and their inventory
+- Filter inventory by criteria
+- Compare multiple computers
+- Purchase a computer
 
-![alt text](images/image.png "Title")
+## Tech
 
- Feel free to login as any of these store owner accounts or create a new one.
+- Front end: **HTML / CSS / JavaScript**
+- Backed by a database of stores, inventory, and accounts
+- Deployed as a static site on **AWS S3**
 
-## Use Cases
+## Demo credentials
 
-The following use cases are currently implemented as of 11/26/23:
+- **Site Manager:** `admin` / `admin`
+- **Store Owner:** the database is prepopulated with sample store-owner accounts (or create your own)
 
-### Site Manager
-
-- (SM) Report total inventory $$ amount in entire site
-- (SM) Remove Store
-- (SM) Report $$ balance for site manager
-- (SM) Generate $$ report of total site inventory (i.e., just a total number)
-- (SM) Generate report of site inventory aggregated by virtual store (i.e., one row for each store)
-
-### Store Owner
-
-- (SO) Create Store
-- (SO) Add Computer
-- (SO) Remove Computer From Inventory
-- (SO) Generate Inventory
-- (SO) Generate total store $$ balance
-- (SO) Modify computer price
-
-### Customer
-
-- (C) List Stores
-- (C) Generate Inventory Report For Specific Store
-- (C) Generate Inventory for specific filter criteria
-- (C) Compare multiple computers
-- (C) Purchase computer
-
-## Instruction For Running Final Iteration
-
-- Site Manager Remove Store
-    1. From home screen
-    2. Select Site Maneger
-    3. Login with site manager credentials - admin, admin
-    4. Click remove store
-    5. Select desired store from drop down
-    6. Click remove
-
-- Site Manager Sorting Store Inventory by $$
-    1. From home screen
-    2. Select Site Maneger
-    3. Login with site manager credentials - admin, admin
-    4. Click inventoiry report
-    5. Sort by drop down, asc, desc
-
-- Store Owner Modify Computer Price Store Owner
-    1. From home screen
-    2. select store Owner
-    3. Login to any store or create new store
-    4. Create computer if necessary by clicking Add New Computer
-    5. If comoputers exist, click View/Remove Inventory
-    6. Click edit (blue) next to desired computer in the action column
-    7. Type new price
-    8. Click save (green) in action column
-
-- Customer computer filtering
-    1. From home screen
-    2. Click customer
-    3. From select store drop down select All stores or a specific store
-    4. From same page, use side bar to select filter criteria. Click apply filters button (green)
-    
-- Customer Compare Computers
-    1. From home screen
-    2. Click customer
-    3. Select at least 2 computers by using the check boxes on the item block
-    4. Click compare
-    5. Exit by using X in upper right... not the browser X
-
-- Customer Buy Computer
-    1. From home screen
-    2. Click customer
-    3. Enter latitude and longitude
-    4. Click buy now ONCE... There may be a delay. Clicking more than once may cause an error. 
-       The customer will not see the purchase displayed.
-
-- Site Manager
-    1. From home screen
-    2. Select Site Maneger
-    3. Login with site manager credentials - admin, admin
-    4. Click inventory report
-    5. Check total site balance underneath table
-
-- Store Owner Review Balance
-    1. From home screen
-    2. select store Owner
-    3. Login to any store or create new store
-    4. Click View/Remove Inverntory
-    5. Check total store balance underneath table
-
-    
-
-
+Built for a graduate software-engineering course (CS 509).
